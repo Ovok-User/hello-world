@@ -26,9 +26,9 @@ Before proceeding, make sure to register your account with Ovok.com [here](https
 
 	```bash
 	# Ovok Configuration
-	OVOK_CLIENT_ID=YOUR_OVOK_CLIENT_ID
-	OVOK_PROJECT_ID=YOUR_OVOK_PROJECT_ID
-	OVOK_ORGANISATION_ID=YOUR_OVOK_ORGANISATION_ID.   
+	REACT_APP_OVOK_CLIENT_ID=YOUR_OVOK_CLIENT_ID
+	REACT_APP_OVOK_PROJECT_ID=YOUR_OVOK_PROJECT_ID
+	REACT_APP_OVOK_ORGANISATION_ID=YOUR_OVOK_ORGANISATION_ID.   
 	```    
 
 3. Install the dependencies and run the app:
