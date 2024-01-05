@@ -16,6 +16,9 @@ const ObservationComponent: React.FC<ObservationProps> = ({ observations }) => {
 		{ field: "category", headerName: "Category", width: 250 },
 	];
 
+	if (!observations || observations.length < 1) {
+		return <></>;
+	}
 	const rows = observations.map((observation) => ({
 		id: observation.id,
 		status: observation.status || "",
