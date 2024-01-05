@@ -37,7 +37,7 @@ export interface RegisterRequest {
 	readonly organizationId?: string;
 	readonly projectId: string;
 	readonly clientId: string;
-	readonly sendMail: boolean;
+	readonly sendDefaultEmail: boolean;
 }
 
 interface ApiParams {
@@ -67,7 +67,7 @@ export async function registerNewUser(newUserRequest: RegisterRequest) {
 		resourceType: newUserRequest.resourceType,
 		organizationId: newUserRequest.organizationId,
 		projectId: newUserRequest.projectId,
-		sendMail: newUserRequest.sendMail,
+		sendDefaultEmail: newUserRequest.sendDefaultEmail,
 	});
 
 	return response;
