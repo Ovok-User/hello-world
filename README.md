@@ -7,10 +7,10 @@ This guide will walk you through the sign-in process, the home page, and the obs
 1. [Subscribe](https://ovok.com/) to a payment plan that fits your project requirements.
 2. Follow the link in the confirmation email to configure your password.
 3. [Sign in](https://dashboard.dev.ovok.com/signup) to the Ovok dashboard with your email and password.
-4. Go to [Overview](https://dashboard.dev.ovok.com/developer) and create a new client by clicking on "Create new client".
-5. Input a client name (and optionally a description and redirect URI) and click on "createClient".
-6. Go to [ClientApplication](https://dashboard.dev.ovok.com/ClientApplication), click on the newly created client, and copy the client ID.
-7. Go to [Project](https://dashboard.dev.ovok.com/admin/project) and copy project ID.
+4. Go to [Overview](https://dashboard.dev.ovok.com/developer) and create a new client by clicking on the **Create new client** text.
+5. Input a client name (and optionally a description and redirect URI) and click on the **createClient** button.
+6. Go to [ClientApplication](https://dashboard.dev.ovok.com/ClientApplication), click on the newly created client, and copy the client `ID`.
+7. Go to [Project](https://dashboard.dev.ovok.com/admin/project), click on the **Details** tab and copy the project `ID`.
 
 ## Clone and Run the Ovok Hello World App
 1. Clone the `ovok-hello-world` repository to your local machine:
@@ -19,7 +19,7 @@ This guide will walk you through the sign-in process, the home page, and the obs
     
     cd ovok-hello-world
     ```
-2. Create an `.env` file and populate the credentials, use the provided `.env.example` file as template.
+2. Create an `.env` file by the provided `.env.example` file as template and populate the credentials.
     ```bash
     cp .env.example .env
     ```
@@ -28,7 +28,7 @@ This guide will walk you through the sign-in process, the home page, and the obs
     REACT_APP_OVOK_CLIENT_ID=YOUR_OVOK_CLIENT_ID
     REACT_APP_OVOK_PROJECT_ID=YOUR_OVOK_PROJECT_ID
     ```
-3. Install the dependencies:
+3. Install dependencies:
     ```bash
     npm install  
     ```
@@ -42,13 +42,8 @@ This guide will walk you through the sign-in process, the home page, and the obs
 ## Register
 1. The [Sign in](http://localhost:3000/login) page opens automatically.
 2. Go to the [Sign up](http://localhost:3000/register) page and register.
-3. Upon successful sign in, you will be redirected to the Hello World home page.
+3. Upon successful sign up you are redirected to the Ovok Hello World App [home page](http://localhost:3000/).
 
-## Home Page
-Upon reaching the home page:
-- **Profile Overview:** Your patient or practitioner profile details will be displayed, offering a quick snapshot of your Ovok account.
-- **Available Observations:** Access additional options to explore and interact with your available observations.
-
-## Observation Page
-Clicking on the "Observations" option will take you to the Observation Page. Here, you can discover and manage all the FHIR observations related to your Ovok project.
-- **List of Observations:** View a comprehensive list of all available FHIR observations within your project.
+## Available Pages
+- **Profile**: overview of your personal information, offering a quick snapshot of your Ovok account.
+- **Observations**: list of the FHIR Observation resources related to your Ovok project.
