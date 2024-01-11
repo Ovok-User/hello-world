@@ -13,6 +13,8 @@ import Profile from "../../components/Profile/Profile";
 import { useSession } from "../../hooks";
 import { getObservations } from "../../ovok";
 import { ObservationComponent } from "../../components/Observation";
+import { Loader } from "../../components";
+import { NotFound } from "../../components/NotFound";
 
 export default function Home() {
 	const session = useSession();
@@ -129,7 +131,11 @@ export default function Home() {
 				</Tabs>
 			</Box>
 			{selectedTab ? (
-				<ObservationComponent observations={observations} />
+				observations && observations.length > 0 ? (
+					<ObservationComponent observations={observations} />
+				) : (
+					<NotFound resource="Observations" />
+				)
 			) : (
 				<Profile />
 			)}

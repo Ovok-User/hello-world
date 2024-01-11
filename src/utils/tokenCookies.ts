@@ -1,4 +1,4 @@
-import { destroyCookie, parseCookies, setCookie } from "nookies";
+import Cookies from "universal-cookie";
 import {
 	COOKIE_EXPIRATION_TIME,
 	REFRESH_TOKEN_COOKIE,
@@ -10,18 +10,20 @@ type CreateSessionCookiesParams = {
 	refreshToken?: string;
 };
 
+const cookies = new Cookies(null, { path: "/" });
+
 export function createSessionCookies(params: CreateSessionCookiesParams) {
 	const { token, refreshToken } = params;
 
 	if (token) {
-		setCookie(null, TOKEN_COOKIE, token, {
+		cookies.set(TOKEN_COOKIE, token, {
 			maxAge: COOKIE_EXPIRATION_TIME,
 			path: "/",
 		});
 	}
 
 	if (refreshToken) {
-		setCookie(null, REFRESH_TOKEN_COOKIE, refreshToken, {
+		cookies.set(REFRESH_TOKEN_COOKIE, refreshToken, {
 			maxAge: COOKIE_EXPIRATION_TIME,
 			path: "/",
 		});
@@ -29,16 +31,14 @@ export function createSessionCookies(params: CreateSessionCookiesParams) {
 }
 
 export function removeSessionCookies() {
-	destroyCookie(null, TOKEN_COOKIE);
-	destroyCookie(null, REFRESH_TOKEN_COOKIE);
+	cookies.remove(TOKEN_COOKIE);
+	cookies.remove(REFRESH_TOKEN_COOKIE);
 }
 
 export function getToken() {
-	const cookies = parseCookies();
-	return cookies[TOKEN_COOKIE];
+	return cookies.get(TOKEN_COOKIE);
 }
 
 export function getRefreshToken() {
-	const cookies = parseCookies();
-	return cookies[REFRESH_TOKEN_COOKIE];
+	return cookies.get(REFRESH_TOKEN_COOKIE);
 }

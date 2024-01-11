@@ -40,7 +40,7 @@ This guide will walk you through the sign-in process, the home page, and the obs
 # Explore the Ovok Hello World App
 
 ## Register
-1. The [Sign in](http://localhost:3000/login) pages opens automatically.
+1. The [Sign in](http://localhost:3000/login) page opens automatically.
 2. Go to the [Sign up](http://localhost:3000/register) page and register.
 3. Upon successful sign in, you will be redirected to the Hello World home page.
 
