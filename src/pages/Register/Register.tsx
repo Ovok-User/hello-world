@@ -47,7 +47,7 @@ function Register() {
 				lastName: data.get("lastName") as string,
 				resourceType: "Patient",
 				projectId: config.ovokProjectId,
-				sendDefaultEmail: true,
+				sendDefaultEmail: false,
 			})
 				.then(async (response) => {
 					await signIn(response);
