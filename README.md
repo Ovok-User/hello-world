@@ -4,7 +4,7 @@ Welcome to the Ovok Hello World App, a simple demo application showcasing the ca
 This guide will walk you through the sign-in process, the home page, and the observation page.
 
 ## Register with Ovok
-1. [Register](https://ovok.com/](https://dashboard.dev.ovok.com/register)) your account on Ovok.
+1. [Register](https://dashboard.dev.ovok.com/register) your account on Ovok.
 3. [Sign in](https://dashboard.dev.ovok.com/signup) to the Ovok dashboard with your email and password.
 4. Go to [Overview](https://dashboard.dev.ovok.com/developer) and create a new client by clicking on the **Create new client** text.
 5. Input a client name (and optionally a description and redirect URI) and click on the **createClient** button.
