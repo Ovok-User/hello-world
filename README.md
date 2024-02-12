@@ -14,7 +14,7 @@ This guide will walk you through the sign-in process, the home page, and the obs
 ## Clone and Run the Ovok Hello World App
 1. Clone the `ovok-hello-world` repository to your local machine:
     ```bash
-    git clone https://github.com/Ovok-Dev/ovok-hello-world.git
+    git clone https://github.com/Ovok-User/ovok-hello-world.git
     
     cd ovok-hello-world
     ```
