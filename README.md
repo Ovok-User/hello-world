@@ -16,7 +16,7 @@ This guide will walk you through the sign-in process, the home page, and the obs
     ```bash
     git clone https://github.com/Ovok-User/hello-world.git
     
-    cd ovok-hello-world
+    cd hello-world
     ```
 2. Create an `.env` file by the provided `.env.example` file as template and populate the credentials.
     ```bash
