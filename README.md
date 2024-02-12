@@ -5,21 +5,23 @@ This guide will walk you through the sign-in process, the home page, and the obs
 
 ## Register with Ovok
 
-1. [Register](https://dashboard.dev.ovok.com/register) your project on Ovok.
-2. [Sign in](https://dashboard.dev.ovok.com/signup) to the Ovok admin dashboard with your practitioner email and password .
-3. Go to [Overview](https://dashboard.dev.ovok.com/developer) and create a new client by clicking on the **Create new client** text.
+1. [Register](https://dashboard.staging.ovok.com/register) your project on Ovok.
+2. [Sign in](https://dashboard.staging.ovok.com/signup) to the Ovok admin dashboard with your practitioner email and password .
+3. Go to [Overview](https://dashboard.staging.ovok.com/developer) and create a new client by clicking on the **Create new client** text.
 4. Input a client name (and optionally a description and redirect URI) and click on the **createClient** button.
-5. Go to [ClientApplication](https://dashboard.dev.ovok.com/ClientApplication), click on the newly created client, and copy the client `ID`.
-6. Go to [Project](https://dashboard.dev.ovok.com/admin/project), click on the **Details** tab and copy the project `ID`.
+5. Go to [ClientApplication](https://dashboard.staging.ovok.com/ClientApplication), click on the newly created client, and copy the client `ID`.
+6. Go to [Project](https://dashboard.staging.ovok.com/admin/project), click on the **Details** tab and copy the project `ID`.
 
 ## Clone and Run the Ovok Hello World App
 
 1. Clone the `ovok-hello-world` repository to your local machine:
-    ```bash
-    git clone https://github.com/Ovok-User/hello-world.git
-    
-    cd hello-world
-    ```
+
+   ```bash
+   git clone https://github.com/Ovok-User/hello-world.git
+
+   cd hello-world
+   ```
+
 2. Create an `.env` file by the provided `.env.example` file as template and populate the credentials.
    ```bash
    cp .env.example .env
