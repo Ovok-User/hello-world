@@ -4,6 +4,6 @@ import { setupInterceptors } from "./interceptors";
 
 export const ovokClient = setupInterceptors(
 	axios.create({
-		baseURL: process.env.OVOK_BASE_URL ?? "https://api.dev.ovok.com/",
+		baseURL: process.env.REACT_APP_OVOK_BASE_URL,
 	})
 );
