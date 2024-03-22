@@ -30,7 +30,7 @@ export default function Home() {
 		getObservations(params)
 			.then((response) => {
 				console.log("response", response);
-				setObservations(response.data);
+				setObservations(response.data.data);
 			})
 			.catch((error) => {
 				console.error("Error fetching observations:", error);
