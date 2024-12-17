@@ -30,7 +30,7 @@ This guide will walk you through the sign-in process, the home page, and the obs
    # Ovok Configuration
    REACT_APP_OVOK_CLIENT_ID=YOUR_OVOK_CLIENT_ID
    REACT_APP_OVOK_PROJECT_ID=YOUR_OVOK_PROJECT_ID
-   REACT_APP_OVOK_BASE_URL=https://api.staging.ovok.com/
+   REACT_APP_OVOK_BASE_URL=https://api.ovok.com/
    ```
 3. Install dependencies:
    ```bash
